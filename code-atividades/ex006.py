@@ -3,33 +3,12 @@
 #Desenvolva um programa que faça uma contagem regressiva para o estouro de fogos de artifício,
 #indo de 10 até 0, com uma pausa de 1 segundo entre eles.
 
-#FOR
-
+# O laço evita repetir manualmente a leitura das oito notas.
 soma = 0
-n1 = float(input('Nota Aluno 1:'))
-soma = soma +n1
+quantidade_alunos = 8
+for aluno in range(1, quantidade_alunos + 1):
+    nota = float(input(f'Nota do aluno {aluno}: '))
+    soma += nota
 
-n2 = float(input('Nota Aluno 2:'))
-soma = soma +n2
-
-n3 = float(input('Nota Aluno 3:'))
-soma = soma +n3
-
-n4 = float(input('Nota Aluno 4:'))
-soma = soma +n4
-
-n5 = float(input('Nota Aluno 5:'))
-soma = soma +n5
-
-n6 = float(input('Nota Aluno 6:'))
-soma = soma +n6
-
-n7 = float(input('Nota Aluno 7:'))
-soma = soma +n7
-
-n8 = float(input('Nota Aluno 8:'))
-soma = soma +n8
-
-media = soma + 8
-media = soma/8
+media = soma / quantidade_alunos
 print('A media da turma foi {}'.format(round(media)))

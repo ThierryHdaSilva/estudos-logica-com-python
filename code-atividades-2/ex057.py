@@ -3,6 +3,7 @@
 
 
 def ler_linha(numero_da_linha):
+    """Lê exatamente três inteiros para uma linha da matriz."""
     while True:
         try:
             linha = [int(numero) for numero in input(
@@ -18,6 +19,7 @@ def ler_linha(numero_da_linha):
 
 matriz = [ler_linha(indice) for indice in range(1, 4)]
 
+# enumerate fornece o número da linha e a própria lista de valores.
 for indice, linha in enumerate(matriz, start=1):
     print(f"Soma da linha {indice}: {sum(linha)}")
 

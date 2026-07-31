@@ -3,6 +3,7 @@
 
 
 def ler_estoque():
+    """Converte texto no formato produto:quantidade em um dicionário."""
     while True:
         entrada = input("Produtos (ex.: arroz:4, feijao:1): ").strip()
         estoque = {}
@@ -32,6 +33,7 @@ while True:
     print("Digite um numero inteiro nao negativo.")
 
 produtos_para_repor = [
+    # O estoque precisa ser menor que o mínimo, não apenas igual a ele.
     produto for produto, quantidade in estoque.items() if quantidade < minimo
 ]
 

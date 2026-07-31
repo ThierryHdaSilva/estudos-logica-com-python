@@ -3,6 +3,7 @@
 
 
 def ler_temperaturas():
+    """Lê pelo menos duas temperaturas em uma única linha."""
     while True:
         entrada = input("Temperaturas separadas por virgula: ").strip()
         try:
@@ -18,6 +19,7 @@ def ler_temperaturas():
         return temperaturas
 
 
+# As funções sum, max e min resumem a lista sem precisar de um laço manual.
 temperaturas = ler_temperaturas()
 media = sum(temperaturas) / len(temperaturas)
 maior = max(temperaturas)

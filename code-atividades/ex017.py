@@ -1,7 +1,7 @@
 # Aula de Estrutura de Dados
 # Listas, Tulpas, Dicionarios
 
-num2 = (2, 8, 6, 9, 10 ) #Tulpa
+num2 = (2, 8, 6, 9, 10 ) # Tupla: não pode ser alterada depois de criada.
 num = [2, 8, 6, 9, 10] #Lista
 num[2] = 3 #Substituiu o 6 pelo 3
 num.append(7) #Adicionou um elemento [7] a lista

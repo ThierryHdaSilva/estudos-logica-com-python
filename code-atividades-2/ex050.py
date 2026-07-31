@@ -3,6 +3,7 @@
 
 
 def normalizar(frase):
+    """Remove espaços/sinais e padroniza letras para comparar o palíndromo."""
     return "".join(caractere.lower() for caractere in frase if caractere.isalnum())
 
 

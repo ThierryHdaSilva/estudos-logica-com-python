@@ -3,6 +3,7 @@
 
 
 def converter_para_minutos(horario):
+    """Converte HH:MM para minutos desde meia-noite ou retorna None."""
     try:
         horas, minutos = horario.split(":")
         horas = int(horas)
