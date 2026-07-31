@@ -1,8 +1,9 @@
 while True:
     numero = int(input("Informe um número inteiro maior que zero: "))
-    if numero > 1:
+    if numero > 0:
         break
 
+# Um número primo possui exatamente dois divisores: 1 e ele mesmo.
 divisores = 0
 for i in range(1, numero + 1):
     if numero % i == 0:

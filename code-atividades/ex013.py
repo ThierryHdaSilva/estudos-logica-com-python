@@ -1,5 +1,5 @@
 numero = 5
 while numero <= 5:
-    if numero < 5:
-        numero += numero
+    # Incrementar garante que a condição deixe de ser verdadeira.
     print(numero)
+    numero += 1

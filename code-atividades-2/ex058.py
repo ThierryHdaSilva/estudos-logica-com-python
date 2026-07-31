@@ -6,6 +6,7 @@ alfabeto = "abcdefghijklmnopqrstuvwxyz"
 
 
 def codificar(mensagem, deslocamento):
+    """Aplica a cifra de César e preserva maiúsculas e caracteres especiais."""
     resultado = ""
 
     for caractere in mensagem:

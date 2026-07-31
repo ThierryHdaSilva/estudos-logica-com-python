@@ -4,6 +4,7 @@
 
 
 def ler_numeros():
+    """Lê uma lista com pelo menos dois números inteiros."""
     while True:
         entrada = input("Digite numeros inteiros separados por virgula: ").strip()
 
@@ -21,6 +22,7 @@ def ler_numeros():
 
 
 def maior_sequencia_crescente(numeros):
+    """Retorna a maior sequência estritamente crescente e consecutiva."""
     maior_sequencia = [numeros[0]]
     sequencia_atual = [numeros[0]]
 

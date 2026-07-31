@@ -3,6 +3,7 @@
 
 
 def avaliar_senha(senha):
+    """Soma critérios simples e classifica a senha em três níveis."""
     pontos = 0
 
     if len(senha) >= 8:

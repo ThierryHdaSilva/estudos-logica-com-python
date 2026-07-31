@@ -2,6 +2,7 @@
 # Tente descobrir a palavra antes de esgotar as seis tentativas erradas.
 
 
+# A lista guarda cada letra correta apenas uma vez.
 palavra_secreta = "python"
 letras_descobertas = []
 tentativas_erradas = 0

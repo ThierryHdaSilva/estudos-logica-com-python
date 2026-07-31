@@ -1,6 +1,7 @@
 import calcArea
 
 def main():
+    # O menu decide qual fórmula será usada no módulo calcArea.
     print("Cálculo das áreas de figuras geométricas:")
     print("1. Círculo")
     print("2. Triângulo")
@@ -9,7 +10,7 @@ def main():
     try:
         opcao = int(input("Qual figura deseja calcular a área? "))
 
-        if opcao < 1 or opcao > 3:
+        if opcao not in (1, 2, 3):
             print("ERRO! Essa não é uma opção válida!")
         else:
             if opcao == 1:
@@ -26,8 +27,9 @@ def main():
                 altura = float(input("Digite a altura do retângulo: "))
                 area = calcArea.calcular_area_retangulo(largura, altura)
                 print(f"A área do retângulo é: {area:.2f}")
-    except ValueError:
-        print("ERRO! Essa não é uma opção válida!")
+    except ValueError as erro:
+        # Captura uma opção não numérica ou uma medida inválida.
+        print(f"ERRO! {erro}")
 
 
 if __name__ == "__main__":

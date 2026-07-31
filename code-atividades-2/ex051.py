@@ -15,10 +15,12 @@ def ler_valor():
 
 
 valor = ler_valor()
+valor_restante = valor
 cedulas = [100, 50, 20, 10, 5, 2, 1]
 
 print("Cedulas entregues:")
 for cedula in cedulas:
-    quantidade, valor = divmod(valor, cedula)
+    # divmod informa quantas cédulas cabem e qual valor ainda falta.
+    quantidade, valor_restante = divmod(valor_restante, cedula)
     if quantidade:
         print(f"{quantidade} cedula(s) de R$ {cedula}")
